@@ -178,7 +178,7 @@ hyper - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -
 
 ## open terminal
 # hyper - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
-hyper - return : "${HOME}"/dev/yabai-scripts/open_iterm2.sh
+hyper - return : "${HOME}"/dev/dotfiles/yabai-scripts/open_iterm2.sh
 
 ## swap window
 # hyper - 0x1E : yabai -m window --swap west
