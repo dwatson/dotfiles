@@ -105,3 +105,5 @@ if [ -f '/Users/dwatson/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then .
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 eval "$(starship init zsh)"
+
+eval $(thefuck --alias)
