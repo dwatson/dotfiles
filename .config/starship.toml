@@ -1,5 +1,7 @@
 format = """
 [](#9A348E)\
+$cmd_duration\
+[ ](bg:#9A348E)\
 $username\
 [](bg:#DA627D fg:#9A348E)\
 $directory\
@@ -45,6 +47,10 @@ truncation_symbol = "…/"
 # So either put "Important Documents" before "Documents" or use the substituted version:
 # "Important  " = "  "
 
+[cmd_duration]
+style = "bg:#9A348E"
+format = '[$duration]($style)'
+
 [git_branch]
 symbol = ""
 style = "bg:#FCA17D"
@@ -73,4 +79,4 @@ format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A"
-format = '[[ ♥ $time ](bg:#33658A)]($style)'
+format = '[[ $time ](bg:#33658A)]($style)'
