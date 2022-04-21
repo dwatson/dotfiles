@@ -99,8 +99,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f '$HOME/.google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/.google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '$HOME/.google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/.google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f ~/.google-cloud-sdk/path.zsh.inc ]; then . ~/.google-cloud-sdk/path.zsh.inc; fi
+if [ -f ~/.google-cloud-sdk/completion.zsh.inc ]; then . ~/.google-cloud-sdk/completion.zsh.inc; fi
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
