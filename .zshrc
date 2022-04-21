@@ -99,17 +99,11 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f '/Users/dwatson/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dwatson/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/Users/dwatson/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dwatson/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '$HOME/.google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/.google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$HOME/.google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/.google-cloud-sdk/completion.zsh.inc'; fi
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 eval "$(starship init zsh)"
 
 eval $(thefuck --alias)
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/dwatson8/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dwatson8/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/dwatson8/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dwatson8/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
