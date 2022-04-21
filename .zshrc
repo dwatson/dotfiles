@@ -40,7 +40,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -107,3 +107,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 eval "$(starship init zsh)"
 
 eval $(thefuck --alias)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dwatson8/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dwatson8/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dwatson8/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dwatson8/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

@@ -60,8 +60,17 @@ format = '[[ $symbol $branch ](bg:#FCA17D)]($style)'
 style = "bg:#FCA17D"
 format = '[[($all_status$ahead_behind )](bg:#FCA17D)]($style)'
 
+[gcloud]
+symbol = "☁️"
+style = "bg:#86BBD8"
+format = '[[ $symbol ($region) ](bg:#86BBD8)]($style)'
+
 [golang]
 symbol = "🐹"
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[python]
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
