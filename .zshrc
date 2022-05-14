@@ -69,7 +69,17 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aliases)
+plugins=(git aliases fzf-zsh-plugin zsh-autosuggestions zsh-syntax-highlighting copypath copyfile jsontools macos)
+# PLUGIN REPOS
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#git clone https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
+
+
+
+
+
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,11 +109,25 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# brew install fzf
+# brew install rg
+# brew install exa
+alias ls="exa"
+alias ll="exa -lha"
+alias tree="exa --tree"
+
+#brew install bat
+alias cat="bat"
+
+# brew install zoxide
+alias cd="z"
+alias zz="z -"
+
 if [ -f ~/.google-cloud-sdk/path.zsh.inc ]; then . ~/.google-cloud-sdk/path.zsh.inc; fi
 if [ -f ~/.google-cloud-sdk/completion.zsh.inc ]; then . ~/.google-cloud-sdk/completion.zsh.inc; fi
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 eval "$(starship init zsh)"
-
+eval "$(zoxide init zsh)"
 eval $(thefuck --alias)
