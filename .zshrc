@@ -1,5 +1,7 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:/usr/local/bin:$HOME/.fig/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -82,6 +84,7 @@ plugins=(git aliases fzf-zsh-plugin zsh-autosuggestions zsh-syntax-highlighting 
 
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zshenv
 
 # User configuration
 
@@ -131,3 +134,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval $(thefuck --alias)
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
