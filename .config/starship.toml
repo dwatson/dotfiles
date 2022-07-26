@@ -13,9 +13,7 @@ $nodejs\
 $rust\
 $golang\
 $python\
-[](fg:#86BBD8 bg:#33658A)\
-$time\
-[ ](fg:#33658A)\
+[](fg:#86BBD8)\
 """
 
 # Disable the blank line at the start of the prompt
